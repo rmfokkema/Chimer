@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Chimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="glow" translatesAutoresizingMaskIntoConstraints="NO" id="uA1-Sj-AjV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <datePicker contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhm-AK-ANT">
+                                <rect key="frame" x="28" y="266" width="320" height="216"/>
+                                <locale key="locale" localeIdentifier="nl"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOI-Wb-XlF">
+                                <rect key="frame" x="38" y="492" width="300" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="298" id="DfJ-lo-tc0"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go"/>
+                                <connections>
+                                    <action selector="go" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ug-q0-EUK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.082352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sOI-Wb-XlF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="15H-FZ-qw7"/>
+                            <constraint firstItem="Mhm-AK-ANT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3b4-mg-rhS"/>
+                            <constraint firstItem="Mhm-AK-ANT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-32" id="8Xn-tI-83c"/>
+                            <constraint firstItem="sOI-Wb-XlF" firstAttribute="top" secondItem="Mhm-AK-ANT" secondAttribute="bottom" constant="10" id="RnS-VH-aiR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="glowView" destination="uA1-Sj-AjV" id="DB4-2E-gEJ"/>
+                        <outlet property="goButton" destination="sOI-Wb-XlF" id="1Ve-xk-tvw"/>
+                        <outlet property="picker" destination="Mhm-AK-ANT" id="IDT-mQ-fAB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="104.1871921182266"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="glow" width="1344" height="1344"/>
+    </resources>
+</document>
