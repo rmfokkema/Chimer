@@ -23,7 +23,7 @@
                                 </accessibility>
                             </imageView>
                             <datePicker contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhm-AK-ANT">
-                                <rect key="frame" x="28" y="266" width="320" height="216"/>
+                                <rect key="frame" x="27.666666666666657" y="266" width="320" height="216"/>
                                 <locale key="locale" localeIdentifier="nl"/>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOI-Wb-XlF">
