@@ -1,9 +1,0 @@
-version: "Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)"
-options: "917371b71035dca77f28e110fce9ffa1605297a5c6a0a78f0157ec977828f850"
-build_start_time: [1645588880, 419477939]
-build_end_time: [1645588891, 387107849]
-inputs:
-  "/Users/rmfokkema/Developer/Chimer/Chimer/AppDelegate.swift": [1645585052, 775518894]
-  "/Users/rmfokkema/Developer/Chimer/Chimer/Extensions.swift": [1645571997, 157496452]
-  "/Users/rmfokkema/Developer/Chimer/Chimer/SceneDelegate.swift": [1645563757, 56862354]
-  "/Users/rmfokkema/Developer/Chimer/Chimer/ViewController.swift": [1645588197, 905341863]
