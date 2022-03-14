@@ -31,7 +31,11 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
 			 super.viewDidLoad()
 			 
 			 glowView.alpha = 0.05
-			 
+
+			 picker.setValue(UIColor(named: "blaat"), forKey: "textColor")
+			 //let white = UIColor(white: <#T##CGFloat#>, alpha: <#T##CGFloat#>)
+			 //picker.textc
+
 			 tap = UITapGestureRecognizer(target: self, action: #selector(runChimer))
 			 tap.isEnabled = false
 			 view.addGestureRecognizer(tap)
@@ -68,16 +72,18 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
 	  
 	  @objc private func runChimer() {
 			 
-			 UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: { self.glowView.alpha = 0.05 }, completion: nil)
-			 
 			 setStatusBarHidden()
+
+			 self.glowView.alpha = 0.05
 			 
 			 UIView.animate(withDuration: picker.countDownDuration, animations: {
 					self.glowView.alpha = 1
 			 }, completion: { completed in
 					if completed {
-						  self.playSound("Chime")
+						  self.playSound("Done")
 						  self.setStatusBarHidden(false)
+
+						  UIView.animate(withDuration: 0.5, delay: 0, options: [.curveEaseOut, .repeat, .autoreverse], animations: { self.glowView.alpha = 0.05 }, completion: nil)
 					} else {
 						  print("Chimer aborted / reset!")
 					}
